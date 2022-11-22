@@ -21,7 +21,7 @@
 
 2. run `npm run start` which builds the project then runs it
 
-3. Choosing your browser, open the localhost through `http://localhost:3000/api`
+3. Choosing your browser, open the localhost through [http://localhost:3000/api](http://localhost:3000/api)
 
 4. Pick one of the images from `images` folder and add the desired width and height
 
