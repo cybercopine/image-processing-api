@@ -23,7 +23,7 @@ app.get(
     res: express.Response
   ) {
     const { filename, width, height } = req.query;
-    let resizedFileName: string = `resized-images/${filename}-${width}-${height}.jpg`;
+    const resizedFileName = `resized-images/${filename}-${width}-${height}.jpg`;
 
     // make sure all parameters have values
     if (!filename || !width || !height) {
@@ -35,7 +35,7 @@ app.get(
       return res.status(400).send('Please enter numeric values only.');
     }
 
-    if (width < '1' || height < '1') {
+    if (Number(width) < 1 || Number(height) < 1) {
       return res.status(400).send('Please enter a value greater than zero.');
     }
 
