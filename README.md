@@ -28,3 +28,7 @@
 ## Example
 
 [http://localhost:3000/api?filename=santamonica&width=450&height=200](http://localhost:3000/api?filename=santamonica&width=450&height=200) will resize the santamonica image to a width of 450px and a height of 200px.
+
+## Notes
+
+for any modifications needed, run `npm run format` and `npm run lint` for fixing any potential errors/better code and formatting.
